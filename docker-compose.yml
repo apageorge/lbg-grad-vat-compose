@@ -11,7 +11,7 @@ services:
     build:
       context: ./frontend-1
       args:
-        SERVER_URL: "35.242.148.12"
+        SERVER_URL: ${SERVER_URL}
     ports:
       - target: 80
         published: 80
@@ -20,7 +20,7 @@ services:
     build:
       context: ./frontend-2
       args:
-        SERVER_URL: "35.242.148.12"
+        SERVER_URL: ${SERVER_URL}
     ports:
       - target: 80
         published: 81
